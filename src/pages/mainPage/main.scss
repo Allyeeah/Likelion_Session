@@ -1,17 +1,18 @@
 .main-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 300px); // 높이 조절
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   padding: 40px;
   background-color: #eaf0f6;
 
   .box {
     display: flex;
+    flex-direction: row;
     background-color: #dbe3ea;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    min-height: 250px;
 
     .text-area {
       flex: 1;
@@ -44,7 +45,7 @@
         font-size: 14px;
         color: #333;
         margin-bottom: 10px;
-        white-space: pre-line;
+        white-space: pre-line; // 줄바꿈 처리
       }
 
       .btn {
@@ -61,7 +62,8 @@
 
     .image-area {
       flex: 1;
-      background-color: #c4c4c4; // 이미지 부분
+      background-color: #c4c4c4;
+      border-radius: 10px 10px 10px 10px;
     }
   }
 }

@@ -27,19 +27,31 @@ const mainFields = [
 const MainPage = () => {
   return (
     <div className="main-wrapper">
-      <Header />
       {mainFields.map((item, index) => (
         <div key={index} className="box">
-          <div className="text-area">
-            <div className="number">{item.number}</div>
-            <div className="title">{item.title}</div>
-            <div className="desc">{item.description}</div>
-            <button className="btn">바로가기 →</button>
-          </div>
-          <div className="image-area" />
+          {item.number === "2" ? (
+            <>
+              <div className="image-area" />
+              <div className="text-area">
+                <div className="number">{item.number}</div>
+                <div className="title">{item.title}</div>
+                <div className="desc">{item.description}</div>
+                <button className="btn">바로가기 →</button>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="text-area">
+                <div className="number">{item.number}</div>
+                <div className="title">{item.title}</div>
+                <div className="desc">{item.description}</div>
+                <button className="btn">바로가기 →</button>
+              </div>
+              <div className="image-area" />
+            </>
+          )}
         </div>
       ))}
-      <Footer />
     </div>
   );
 };
