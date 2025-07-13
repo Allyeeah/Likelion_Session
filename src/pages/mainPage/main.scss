@@ -1,0 +1,67 @@
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 300px); // 높이 조절
+  gap: 20px;
+  padding: 40px;
+  background-color: #eaf0f6;
+
+  .box {
+    display: flex;
+    background-color: #dbe3ea;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    .text-area {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #eaf0f6;
+
+      .number {
+        background-color: #36a9c5;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .desc {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 10px;
+        white-space: pre-line;
+      }
+
+      .btn {
+        align-self: flex-start;
+        border: none;
+        background: none;
+        color: #333;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 0;
+        border-bottom: 1px solid #333;
+      }
+    }
+
+    .image-area {
+      flex: 1;
+      background-color: #c4c4c4; // 이미지 부분
+    }
+  }
+}
