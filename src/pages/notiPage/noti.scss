@@ -1,0 +1,13 @@
+.title {
+  padding-left: 2rem;
+}
+.noti-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.noti-title {
+  width: 80%;
+  text-align: start;
+}

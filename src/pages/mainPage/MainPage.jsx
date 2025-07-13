@@ -1,7 +1,5 @@
 import React from "react";
 import "./main.scss";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 
 const mainFields = [
   {
