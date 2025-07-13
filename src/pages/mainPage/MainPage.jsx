@@ -1,5 +1,7 @@
 import React from "react";
 import "./main.scss";
+import Header from "../../components/Header";
+import Footer2 from "../../components/Footer2";
 
 const mainFields = [
   {
@@ -25,6 +27,7 @@ const mainFields = [
 const MainPage = () => {
   return (
     <div className="main-wrapper">
+      <Header />
       {mainFields.map((item, index) => (
         <div key={index} className="box">
           <div className="text-area">
@@ -36,6 +39,7 @@ const MainPage = () => {
           <div className="image-area" />
         </div>
       ))}
+      <Footer2 />
     </div>
   );
 };
