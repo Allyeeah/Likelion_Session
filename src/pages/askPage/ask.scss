@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  justify-content: center; // 추가
+  margin-left: auto; // 추가
+  margin-right: auto; // 추가
+  width: 400px;
+}
+
+.tab-btn {
+  align-items: center;
+  flex: 1;
+  padding: 16px 0;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 2px solid #e5e7ef;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tab-btn.active {
+  background: #234a99;
+  color: #fff;
+  border-bottom: 2px solid #234a99;
+  z-index: 1;
+}
+
+//인기게시글
+.ask-container {
+  justify-content: center;
+}
+.popular-posts {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  justify-content: center; // 추가
+  margin-left: auto; // 추가
+  margin-right: auto;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 24px;
+  width: 320px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.question {
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 8px;
+  font-size: 17px;
+  display: flex;
+  align-items: flex-start; // 수정: flex-start로 변경
+}
+
+.q-icon {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+.content {
+  color: #222;
+  font-size: 15px;
+  word-break: keep-all;
+  margin-top: 4px;
+}
+
+.postbtn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.postbtn {
+  align-items: center;
+  background: #18b5c6;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}

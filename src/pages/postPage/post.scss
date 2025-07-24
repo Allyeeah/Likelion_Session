@@ -1,0 +1,60 @@
+.post-page-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 95vw;
+  width: 90vw;
+  min-width: 350px;
+  margin: 40px auto;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+
+  .title {
+    background: #fff;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .inputbox {
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c0c0;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  textarea.inputbox {
+    background: #fff;
+    min-height: 220px;
+    resize: none;
+  }
+
+  .section-title {
+    background: #fff;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .register-btn {
+    background: #18b5c6;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end; // float: right; 대신 추가
+    margin-right: 40px;
+    margin-top: 100px;
+  }
+}
+.optionbox {
+  display: "flex";
+  gap: "16px";
+  background: #fff;
+}

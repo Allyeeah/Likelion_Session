@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./footer.scss";
 const footerfields = [
   "회사소개",
   "이용약관",
